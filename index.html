@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice of the Voiceless</title>
+
+</head>
+<body>
+    <a href="about:blank" class="quick-exit" onclick="quickExit()" title="Quick Exit for Safety">Quick Exit</a>
+
+    <div class="container">
+        <header>
+
+<h1>Voice of the Voiceless</h1>
+<img src="data:image/jpeg;base64,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 under the firt heading
+</feedback>Environment details:
+
+# VSCode Visible Files
+index.html
+
+# VSCode Open Tabs
+index.html</feedback> 
+
+Assistant: 
+
+<xai:function_call name="edit_file">
+<parameter name="path">c:/Users/sbosh/OneDrive/Desktop/voice of the voiceless/index.html
+<p>A Digital Lighthouse for Sexual Assault Survivors in South Africa</p>
+
+
+        </header>
+
+        <section id="mission">
+            <h2>Our Mission &amp; Vision</h2>
+            <div class="mission-vision">
+                <div>
+                    <h3>Mission</h3>
+                    <p>To provide a secure, compassionate platform that amplifies survivor voices, facilitates justice, and advocates for a South Africa free from sexual violence.</p>
+                </div>
+                <div>
+                    <h3>Vision</h3>
+                    <p>To dismantle the culture of silence and become the primary resource for survivor empowerment.</p>
+                    <p><strong>Philosophy:</strong> Turning victimhood into agency through community and information.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="objectives">
+<h2>Key Objectives</h2>
+
+
+
+
+            <ul class="objectives">
+                <li><strong>Breaking the Silence:</strong> Raising national awareness about South Africa’s status as an epicenter for sexual violence.</li>
+                <li><strong>Resource Accessibility:</strong> Directly connecting users to Thuthuzela Care Centres, legal aid, and professional counseling.</li>
+                <li><strong>Safe Advocacy:</strong> Engaging users with social justice initiatives and movements like Women for Change.</li>
+            </ul>
+        </section>
+
+        <section id="wall">
+<h2>The Wall of Silence</h2>
+
+
+
+<p>A moderated, anonymous space to share your story and find solidarity.</p>
+
+            <form class="wall-form" onsubmit="submitStory(event)">
+                <label for="story">Your Story (Anonymous)</label>
+                <textarea id="story" rows="5" placeholder="Share your experience here... We are listening." required></textarea>
+                <button type="submit">Share Anonymously</button>
+            </form>
+            <div id="testimonials" class="testimonials">
+                <p>Your stories will appear here after moderation.</p>
+            </div>
+        </section>
+
+        <section id="education">
+<h2>Educational Hub</h2>
+
+
+
+
+            <p>Fact sheets on survivor rights and national crime statistics.</p>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Survivor Rights</h3>
+                    <p>Learn about your legal rights and protections.</p>
+                    <a href="#" class="action-btn">Read More</a>
+                </div>
+                <div class="resource-card">
+                    <h3>Crime Statistics</h3>
+                    <p>Key data on sexual violence in South Africa.</p>
+                    <a href="#" class="action-btn">View Stats</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="action">
+<h2>Action Portal</h2>
+
+
+
+
+            <p>Join petitions, donate to partner NGOs, and get info on marches.</p>
+            <a href="#" class="action-btn">Sign Petition</a>
+            <a href="#" class="action-btn">Donate Now</a>
+            <a href="#" class="action-btn">Upcoming Marches</a>
+            <p style="margin-top: 20px;"><strong>Partners:</strong> Thuthuzela Care Centres | Legal Aid South Africa | Women for Change</p>
+        </section>
+
+        <footer>
+            <p>&amp;copy; 2026 Voice of the Voiceless. A safe space for survivors. All shares are anonymous and moderated.</p>
+        </footer>
+    </div>
+
+    <script>
+        function quickExit() {
+            window.open('about:blank', '_self');
+        }
+        function submitStory(event) {
+            event.preventDefault();
+            const story = document.getElementById('story').value;
+            const testimonials = document.getElementById('testimonials');
+            testimonials.innerHTML += `<p><em>Thank you for sharing. Your story has been submitted for moderation.</em></p>`;
+            document.getElementById('story').value = '';
+            // In production, send to moderated backend anonymously
+        }
+    </script>
+</body>
+</html>
